@@ -32,11 +32,9 @@ const TextAnimation = () => {
             tl.fromTo('.cta6',{x:"-100%",opacity:0},{x:0,opacity:1},"<20%")
             tl.fromTo('.cta5',{y:"100%",opacity:0},{y:0,opacity:1},"<20%")
             tl.fromTo('.cta-btn',{y:20,opacity:0},{y:0,opacity:1},"<")
-
             gsap.set('.letter',{display:"inline-block"})
             gsap.fromTo('.letter',{y:"100%",},{y:0,delay:2,stagger:0.05, ease: "back.out(3)"})
         }, App)
- 
         return () => ctx.revert();
     }, [])
 
