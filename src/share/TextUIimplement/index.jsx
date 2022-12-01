@@ -1,5 +1,5 @@
 import React, { useLayoutEffect, useRef } from 'react'
-import image from "./UIElement/photo/hero.jpg"
+import image from "./UIElement/photo/7.jpg"
 import './UIElement/index.css';
 import { gsap } from 'gsap'
 
@@ -43,7 +43,7 @@ const TextAnimation = () => {
     return (
         <section ref={App} className="app"  >
             <nav className='nav-container'>
-                <h1 ref={text} className="logo">skincare.</h1>
+                <h1 ref={text} className="logo">Gumbling.</h1>
             </nav>
             <div
 
