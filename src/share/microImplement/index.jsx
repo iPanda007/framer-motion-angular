@@ -1,10 +1,25 @@
-import React from 'react'
+import React,{useLayoutEffect,useRef}from 'react'
 import './UiImplement/index.css'
-
+import { gsap } from 'gsap'
 const MicroImplement = () => {
+    let app = useRef(); 
+    useLayoutEffect(()=>{
+        let ctx = gsap.context(()=>{
+           const tl =gsap.timeline({
+              defaults:{duration:0.35,ease:"Power2.easeOut"},
+           })
+
+           
+        },app)
+        console.count("a")
+        return ()=>ctx.revert();
+       
+},[])
+
     return (
-        <div>
-            <div class="container">
+        <div >
+            <div class="container" ref={app}>
+          
                 <div class="home">
                     <svg
                         class="home-svg"

@@ -1,7 +1,11 @@
 import React from 'react'
 import MicroImplement from '../../share/microImplement'
 
+
 const  DisplayMicro = () => {
+ 
+ 
+
   return (
     <div>
         
